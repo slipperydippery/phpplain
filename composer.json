@@ -1,0 +1,10 @@
+{
+	"autoload":
+	{
+		"psr-4":
+		{
+			"CandyStick\\": "CandyStick",
+			"Hunter\\": "Hunter"
+		}
+	}
+}
