@@ -31,7 +31,7 @@
 	use CandyStick\CandyStick;
 	use CandyStick\Chocolate;
 	use CandyStick\Caramel;
-	use CandyStick\Interfaces\CandyOnStick;
+	// use CandyStick\Interfaces\CandyOnStick;
 
 
 	$candyStick = New Chocolate(New Caramel(New CandyStick()));

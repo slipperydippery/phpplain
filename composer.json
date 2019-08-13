@@ -4,7 +4,8 @@
 		"psr-4":
 		{
 			"CandyStick\\": "CandyStick",
-			"Hunter\\": "Hunter"
+			"Hunter\\": "Hunter",
+			"SongExploder\\": "SongExploder"
 		}
 	}
 }
