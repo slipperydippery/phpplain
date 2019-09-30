@@ -1,8 +1,9 @@
 <?php
 
-use Hunter\PrimeFactors\Prime;
+use Hunter\Tasks\Task;
 
-require 'vendor/autoload.php';
+require 'bootstrap.php'
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -16,12 +17,21 @@ require 'vendor/autoload.php';
 
 <?php
 
-var_dump(Prime::primefactors(558));
-
-
-
+$tasks = $query->selectAll('todos', 'Hunter\Tasks\Task')
 
 ?>
+
+<ul>
+	<?php foreach ($tasks as $task): ?>
+		<li> 
+			<?php if ($task->completed): ?>
+				<strike><?= $task->description ?> </strike>
+			<?php else: ?>
+				<?= $task->description ?> 
+			<?php endif ?>
+		</li>
+	<?php endforeach ?>
+</ul>
 
 </body>
 </html>
